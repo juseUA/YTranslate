@@ -4,7 +4,7 @@
 
   require 'Telegram_Bot.class.php';
 
-  $TBot = new TBot('237005287:AAECLicmgkg1I8_lQVLR7EIsX_VKhirU-Ww');
+  $TBot = new TBot('');
 
   $content = file_get_contents("php://input");
 
@@ -97,7 +97,7 @@
 
       $direction = $TBot->get_t_direction($user['id']);
 
-      $YTranslate = new YTranslate('trnsl.1.1.20160505T115011Z.c576880a1febe027.fa470e4f59c58f4330632e77854b8ccef86ac266', $direction);
+      $YTranslate = new YTranslate('', $direction);
 
       if (mb_strlen($need_translate) > 200) {
 
