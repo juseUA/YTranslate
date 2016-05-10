@@ -1,10 +1,18 @@
 # YTranslate
 Telegram translate bot(Yandex API)
 
-Setting Up your translate telegram bot
+Настройка вашего бота-переводчика
 
-In Translate_Bot.php
+В файле Translate_Bot.php
 
-$TBot = new TBot('Your Telegram Bot Api Token Here');
+<?php 
 
-$YTranslate = new YTranslate('Your Tandex Translate API Token', $direction);
+$TBot = new TBot('Токен для доступа к телеграм боту');
+
+$YTranslate = new YTranslate('Токен яндекс-переводчика', $direction);
+
+?>
+
+Загрузите файлы на сервер и установите WebHook. 
+
+Всё. Ваш бот готов)
